@@ -13,7 +13,7 @@ botid="469477762017656842"
 @client.event
 async def on_message(message):
     if message.content.startswith('/napravigame') and message.author.id != botid:
-        Random=random.randint(0,26)
+        Random=random.randint(0,30)
         if Random==0:
             msg=await client.send_message(message.channel, "Mapa: Amazonia\nhttp://aoe3.heavengames.com/pix/randommaps/rms_amazonia.gif")
             await client.add_reaction(msg,"👍")
@@ -120,6 +120,22 @@ async def on_message(message):
             await client.add_reaction(msg,"👎")
         elif Random==26:
             msg=await client.send_message(message.channel,'Mapa: Yukon\nhttp://aoe3.heavengames.com/pix/randommaps/rms_yukon.gif')
+            await client.add_reaction(msg,"👍")
+            await client.add_reaction(msg,"👎"
+        elif Random==27:
+            msg=await client.send_message(message.channel,'Mapa: Europa (small)\nhttps://cdn.discordapp.com/attachments/468916391844511754/469545635683762186/WhatsApp_Image_2018-07-14_at_21.57.42.jpeg')
+            await client.add_reaction(msg,"👍")
+            await client.add_reaction(msg,"👎")
+        elif Random==28:
+            msg=await client.send_message(message.channel,'Mapa: Europa (big)\nhttps://cdn.discordapp.com/attachments/468916391844511754/469237635525640192/Screenshot_36.png')
+            await client.add_reaction(msg,"👍")
+            await client.add_reaction(msg,"👎")
+        elif Random==29:
+            msg=await client.send_message(message.channel,'Mapa: Sj. Amerika\nhttps://cdn.discordapp.com/attachments/468916391844511754/469545629677256726/WhatsApp_Image_2018-07-15_at_22.47.56.jpeg')
+            await client.add_reaction(msg,"👍")
+            await client.add_reaction(msg,"👎")
+        elif Random==30:
+            msg=await client.send_message(message.channel,'Mapa: Azija\nhttps://cdn.discordapp.com/attachments/468916391844511754/469545630994268161/WhatsApp_Image_2018-07-15_at_22.33.49.jpeg')
             await client.add_reaction(msg,"👍")
             await client.add_reaction(msg,"👎")
 client.run(str(os.environ.get('BOT_TOKEN')))
