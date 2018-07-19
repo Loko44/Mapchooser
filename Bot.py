@@ -3,8 +3,6 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 import random
-import os
-import time
 # -*- coding: UTF-8 -*-
 Client = discord.Client()
 client = commands.Bot(command_prefix = "/")
@@ -123,4 +121,4 @@ async def on_message(message):
             msg=await client.send_message(message.channel,'Mapa: Yukon\nhttp://aoe3.heavengames.com/pix/randommaps/rms_yukon.gif')
             await client.add_reaction(msg,"👍")
             await client.add_reaction(msg,"👎")
-client.run(os.getenv('TOKEN'))
+client.run(process.env.BOT_TOKEN)
