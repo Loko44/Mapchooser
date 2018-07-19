@@ -13,7 +13,7 @@ botid="469477762017656842"
 @client.event
 async def on_message(message):
     if message.content.startswith('/help') and  message.author.id != botid:
-        await client.send_message(message.channel,'Napiši **/napravigame** da slučajno odaberem mapu u igrici ili scenarija ili\n**/napravigame scenario** da slučajno odaberem scenario')
+        await client.send_message(message.channel,'Napiši **/napravigame** da slučajno odaberem mapu u igrici ili scenario ili\n**/napravigame scenario** da slučajno odaberem neki scenario')
     elif message.content.startswith('/napravigame') and message.content.endswith('scenario') and  message.author.id != botid:
         Random=random.randint(0,3)
         if Random==0:
