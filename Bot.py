@@ -3,7 +3,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 import random
-impost os
+import os
 import time
 # -*- coding: UTF-8 -*-
 Client = discord.Client()
