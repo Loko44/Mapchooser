@@ -121,7 +121,7 @@ async def on_message(message):
         elif Random==26:
             msg=await client.send_message(message.channel,'Mapa: Yukon\nhttp://aoe3.heavengames.com/pix/randommaps/rms_yukon.gif')
             await client.add_reaction(msg,"👍")
-            await client.add_reaction(msg,"👎"
+            await client.add_reaction(msg,"👎")
         elif Random==27:
             msg=await client.send_message(message.channel,'Mapa: Europa (small)\nhttps://cdn.discordapp.com/attachments/468916391844511754/469545635683762186/WhatsApp_Image_2018-07-14_at_21.57.42.jpeg')
             await client.add_reaction(msg,"👍")
