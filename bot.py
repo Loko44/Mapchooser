@@ -121,4 +121,4 @@ async def on_message(message):
             msg=await client.send_message(message.channel,'Mapa: Yukon\nhttp://aoe3.heavengames.com/pix/randommaps/rms_yukon.gif')
             await client.add_reaction(msg,"👍")
             await client.add_reaction(msg,"👎")
-client.run(process.env.BOT_TOKEN)
+client.run(str(os.environ.get('BOT_TOKEN')))
