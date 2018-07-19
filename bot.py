@@ -9,7 +9,9 @@ Client = discord.Client()
 client = commands.Bot(command_prefix = "/")
 botid="469477762017656842"
 
-
+@client.event
+async def on_ready():
+    await client.change_presence(game=discord.Game(name="prefix /"))
 @client.event
 async def on_message(message):
     if message.content.startswith('/help') and  message.author.id != botid:
