@@ -123,19 +123,19 @@ async def on_message(message):
             await client.add_reaction(msg,"👍")
             await client.add_reaction(msg,"👎")
         elif Random==27:
-            msg=await client.send_message(message.channel,'Mapa: Europa (small)\nhttps://cdn.discordapp.com/attachments/468916391844511754/469545635683762186/WhatsApp_Image_2018-07-14_at_21.57.42.jpeg')
+            msg=await client.send_message(message.channel,'Mapa: Europa (small)\nhttps://cdn.discordapp.com/attachments/469228128024133635/469582325253013524/imageedit_9_4761086992.png')
             await client.add_reaction(msg,"👍")
             await client.add_reaction(msg,"👎")
         elif Random==28:
-            msg=await client.send_message(message.channel,'Mapa: Europa (big)\nhttps://cdn.discordapp.com/attachments/468916391844511754/469237635525640192/Screenshot_36.png')
+            msg=await client.send_message(message.channel,'Mapa: Europa (big)\nhttps://cdn.discordapp.com/attachments/469228128024133635/469579961292816384/imageedit_7_5916529584.png')
             await client.add_reaction(msg,"👍")
             await client.add_reaction(msg,"👎")
         elif Random==29:
-            msg=await client.send_message(message.channel,'Mapa: Sj. Amerika\nhttps://cdn.discordapp.com/attachments/468916391844511754/469545629677256726/WhatsApp_Image_2018-07-15_at_22.47.56.jpeg')
+            msg=await client.send_message(message.channel,'Mapa: Sj. Amerika\nhttps://cdn.discordapp.com/attachments/469228128024133635/469551739742453761/imageedit_1_3422115150.png')
             await client.add_reaction(msg,"👍")
             await client.add_reaction(msg,"👎")
         elif Random==30:
-            msg=await client.send_message(message.channel,'Mapa: Azija\nhttps://cdn.discordapp.com/attachments/468916391844511754/469545630994268161/WhatsApp_Image_2018-07-15_at_22.33.49.jpeg')
+            msg=await client.send_message(message.channel,'Mapa: Azija\nhttps://cdn.discordapp.com/attachments/469228128024133635/469553724403220481/imageedit_5_9576557025.png')
             await client.add_reaction(msg,"👍")
             await client.add_reaction(msg,"👎")
 client.run(str(os.environ.get('BOT_TOKEN')))
