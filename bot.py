@@ -12,7 +12,7 @@ botid="469477762017656842"
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('/napravigame') and message.author.id != botid and not message.content.contains('scenario') :
+    if message.content.startswith('/napravigame') and message.author.id != botid and not message.content.endswith('scenario') :
         Random=random.randint(0,30)
         if Random==0:
             msg=await client.send_message(message.channel, "Mapa: Amazonia\nhttp://aoe3.heavengames.com/pix/randommaps/rms_amazonia.gif")
@@ -140,7 +140,7 @@ async def on_message(message):
             await client.add_reaction(msg,"👎")
 @client.event
 async def on_message(message):
-    if message.content.startswith('/napravigame') and message.content.contains('scenario') and  message.author.id != botid:
+    if message.content.startswith('/napravigame') and message.content.endswith('scenario') and  message.author.id != botid:
         Random=random.randint(0,3)
         if Random==0:
             msg=await client.send_message(message.channel,'Mapa: Europa (small)\nhttps://cdn.discordapp.com/attachments/469228128024133635/469582325253013524/imageedit_9_4761086992.png')
