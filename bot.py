@@ -12,7 +12,7 @@ botid="469477762017656842"
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('/napravigame') and message.author.id != botid and not message.content.endswith('scenario') :
+    if message.content.startswith('/napravigame') and message.author.id != botid:
         Random=random.randint(0,30)
         if Random==0:
             msg=await client.send_message(message.channel, "Mapa: Amazonia\nhttp://aoe3.heavengames.com/pix/randommaps/rms_amazonia.gif")
