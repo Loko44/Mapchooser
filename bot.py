@@ -17,7 +17,7 @@ async def on_message(message):
     if message.content.startswith('/help') and  message.author.id != botid:
         await client.send_message(message.channel,'Napiši **/napravigame** da slučajno odaberem mapu u igrici ili scenario ili\n**/napravigame scenario** da slučajno odaberem neki scenario')
     elif message.content.startswith('/napravigame') and message.content.endswith('scenario') and  message.author.id != botid:
-        Random=random.randint(0,3)
+        Random=random.randint(0,4)
         if Random==0:
             msg=await client.send_message(message.channel,'Mapa: Europa (small)\nhttps://cdn.discordapp.com/attachments/469228128024133635/469582325253013524/imageedit_9_4761086992.png')
             await client.add_reaction(msg,"👍")
@@ -34,8 +34,12 @@ async def on_message(message):
             msg=await client.send_message(message.channel,'Mapa: Azija\nhttps://cdn.discordapp.com/attachments/469228128024133635/469553724403220481/imageedit_5_9576557025.png')
             await client.add_reaction(msg,"👍")
             await client.add_reaction(msg,"👎")
+        elif Random==4:
+            msg=await client.send_message(message.channel,'Mapa: Ju. Amerika\nhttps://cdn.discordapp.com/attachments/472503428807917570/472787446099214357/imageedit_3_5499766197.png')
+            await client.add_reaction(msg,"👍")
+            await client.add_reaction(msg,"👎")
     elif message.content.startswith('/napravigame') and message.author.id != botid:
-        Random=random.randint(0,30)
+        Random=random.randint(0,31)
         if Random==0:
             msg=await client.send_message(message.channel, "Mapa: Amazonia\nhttp://aoe3.heavengames.com/pix/randommaps/rms_amazonia.gif")
             await client.add_reaction(msg,"👍")
@@ -160,5 +164,8 @@ async def on_message(message):
             msg=await client.send_message(message.channel,'Mapa: Azija\nhttps://cdn.discordapp.com/attachments/469228128024133635/469553724403220481/imageedit_5_9576557025.png')
             await client.add_reaction(msg,"👍")
             await client.add_reaction(msg,"👎")
- 
+        elif Random==31:
+            msg=await client.send_message(message.channel,'Mapa: Ju. Amerika\nhttps://cdn.discordapp.com/attachments/472503428807917570/472787446099214357/imageedit_3_5499766197.png')
+            await client.add_reaction(msg,"👍")
+            await client.add_reaction(msg,"👎")
 client.run(str(os.environ.get('BOT_TOKEN')))
